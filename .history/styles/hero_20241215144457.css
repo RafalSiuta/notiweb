@@ -1,0 +1,19 @@
+.hero-header{
+    display: flex;
+    flex-direction: row;
+}
+.hero-text{
+
+}
+.hero-image{
+    display: block;
+    width: 50%;
+}
+.download-btn{
+
+}
+.promo-img{
+
+    width: 600px;
+    height: 600px;
+}
