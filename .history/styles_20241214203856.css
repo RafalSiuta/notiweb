@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Exo-medium";
+    src:url("fonts/Exo2-Medium.ttf") format("ttf");
+}
+
+nav ul{
+    width: 100vw;
+    height: 50px;
+    background-color: antiquewhite;
+    position: absolute;
+    text-align: right;
+}
+li{
+    display: inline;
+
+}
+a {
+    color: #161616;
+    font-size: 1em;
+    text-decoration: none;
+    font-family: "Exo-medium";
+}
+
+body{
+    background-color: #EEEEEE;
+
+}
+
+section{
+    width: 100vw;
+    height: 100vh;
+}

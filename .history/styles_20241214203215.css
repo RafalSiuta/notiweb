@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "Exo";
+    src:
+        local("Trickster"),
+        url("fonts/Exo2-Medium.ttf") format("opentype") 
+}
+
+nav ul{
+    width: 100vh;
+    height: 50px;
+    background-color: antiquewhite;
+    position: absolute;
+}
+li a{
+    display: inline;
+    text-decoration: none;
+
+}
+
+body{
+    background-color: #EEEEEE;
+
+}
+
+section{
+    width: 100vw;
+    height: 100vh;
+}

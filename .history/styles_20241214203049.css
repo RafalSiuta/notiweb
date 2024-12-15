@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "Exo";
+    src:
+        local("Trickster"),
+        url("fonts/Exo2-Medium.ttf") format("opentype") 
+}
+
+body{
+    background-color: #EEEEEE;
+
+}
+
+section{
+    width: 100vw;
+    height: 100vh;
+}
