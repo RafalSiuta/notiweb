@@ -1,0 +1,41 @@
+
+.about-header {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    margin: 5vh auto;
+}
+.about-image{
+    width: 50%;
+}
+
+.about-text{
+    width: 50%;
+}
+.soci-list {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+
+.soci-btn {
+    background-color: rgba(238, 238, 238, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid #161616;
+    border-radius: 10px;
+    margin-right: 25px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.soci-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+.soci-btn:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}

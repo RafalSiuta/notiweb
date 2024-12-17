@@ -1,0 +1,142 @@
+.hero-header{
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    margin: 5vh auto;
+}
+.hero-text{
+    display: block;
+    width: 30%;
+}
+.hero-text h1{
+    font-size: 2.5em;
+}
+.hero-text p {
+    font-size: 1.5em;
+    line-height: 2em;
+}
+.hero-image{
+    display: block;
+    width: 70%;
+    text-align: center;
+    align-items: center;
+    padding: auto;
+}
+.download-btn{
+    border: none;
+    cursor: pointer;
+}
+.download-btn img{
+    height: 40px;
+    border-radius: 5px;
+    
+}
+.download-btn img:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 1px 1px rgba(177, 177, 177, 0.5);
+    transition: all 0.3s ease-in-out;
+    
+}
+.promo-img{
+
+    height: 600px;
+}
+@media (max-width: 768px) {
+    .hero-header {
+        flex-direction: column;
+        /* Zmiana układu z rzędowego na kolumnowy */
+        align-items: center;
+        /* Centrowanie zawartości */
+        width: 100vw;
+        /* Szerokość na całą dostępną szerokość widoku */
+        padding: 20px;
+        /* Dodatkowy padding dla lepszego wyświetlania */
+    }
+
+    .hero-text,
+    .hero-image {
+        width: 80vw;
+        /* Ustawienie szerokości każdego z dzieci na 100% szerokości kontenera */
+        text-align: left;
+        /* Centrowanie tekstu wewnątrz hero-text */
+    }
+
+    .hero-image {
+        order: -1;
+        margin-bottom: 50px;
+        /* Umieszczenie obrazu na górze */
+    }
+
+    .promo-img {
+        height: auto;
+        /* Dostosowanie wysokości obrazu */
+        max-height: 350px;
+        /* Maksymalna wysokość obrazu */
+    }
+
+    .hero-text h1 {
+        font-size: 1.2em;
+        max-width: 200px;
+        /* Lekkie zmniejszenie rozmiaru nagłówka */
+    }
+
+    .hero-text p {
+        font-size: 0.8em;
+        /* Dostosowanie rozmiaru tekstu paragrafu */
+    }
+
+    .download-btn img {
+        height: 30px;
+        /* Zmniejszenie przycisku pobierania */
+    }
+}
+
+@media (max-width: 380px) {
+.hero-header {
+        flex-direction: column;
+        /* Zmiana układu z rzędowego na kolumnowy */
+        align-items: center;
+        /* Centrowanie zawartości */
+        width: 100vw;
+        /* Szerokość na całą dostępną szerokość widoku */
+        padding: 20px;
+        /* Dodatkowy padding dla lepszego wyświetlania */
+    }
+
+    .hero-text,
+    .hero-image {
+        width: 80vw;
+        /* Ustawienie szerokości każdego z dzieci na 100% szerokości kontenera */
+        text-align: left;
+        /* Centrowanie tekstu wewnątrz hero-text */
+    }
+
+    .hero-image {
+        order: -1;
+        /* Umieszczenie obrazu na górze */
+    }
+
+    .promo-img {
+        height: auto;
+        /* Dostosowanie wysokości obrazu */
+        max-height: 300px;
+        /* Maksymalna wysokość obrazu */
+    }
+
+    .hero-text h1 {
+        font-size: 1em;
+        max-width: 200px;
+        /* Lekkie zmniejszenie rozmiaru nagłówka */
+    }
+
+    .hero-text p {
+        font-size: 0.7em;
+        /* Dostosowanie rozmiaru tekstu paragrafu */
+    }
+
+    .download-btn img {
+        height: 30px;
+        /* Zmniejszenie przycisku pobierania */
+    }
+
+}
