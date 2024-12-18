@@ -1,0 +1,211 @@
+ nav {
+     width: 100vw;
+     margin: 0 auto;
+     position: fixed;
+     top: 0;
+     background-color: rgba(238, 238, 238, 0.5);
+     backdrop-filter: blur(10px);
+     text-align: center;
+
+ }
+
+ .logo {
+     display: block;
+     height: 35px;
+     float: left;
+     margin: 20px 10vw;
+ }
+
+ nav ul {
+     list-style-type: none;
+     width: 90vw;
+     margin: 20px 5vw;
+     text-align: right;
+
+ }
+
+ li {
+     display: inline;
+     margin: 10px;
+ }
+
+ nav a {
+     color: #9e9e9e;
+     /* Kolor nieaktywnych linków */
+     font-size: 1em;
+     text-decoration: none;
+     font-family: "Exo-medium";
+     z-index: 2;
+     position: relative;
+     /* Pozycjonowanie dla pseudoelementów */
+     display: inline-block;
+     /* Dla poprawnego pozycjonowania */
+     padding: 8px 15px;
+     /* Dostosuj według potrzeb */
+ }
+
+ nav .download-menu-btn {
+     height: 20px;
+     border-radius: 5px;
+     background-color: #335CCC;
+     color: white;
+     border: #2D32B3;
+     text-align: center;
+ }
+
+ nav .download-menu-btn:hover {
+     background-color: #2592F0;
+     color: white;
+     transform: scale(1.05);
+     box-shadow: 2px 1px 1px rgba(177, 177, 177, 0.5);
+     transition: all 0.3s ease-in-out;
+ }
+
+ nav .download-menu-btn:hover:before {
+     display: none;
+ }
+
+ nav .download-menu-btn.active {
+     color: white;
+     background-color: #2592F0;
+     transform: scale(1.05);
+     box-shadow: 2px 1px 1px rgba(177, 177, 177, 0.5);
+     transition: all 0.3s ease-in-out;
+ }
+
+ nav .download-menu-btn.active:before {
+     display: none;
+ }
+
+ /* Pseudoelement dla animacji podkreślenia */
+ nav a:before {
+     content: "";
+     position: absolute;
+     width: 0;
+     height: 2px;
+     bottom: 0;
+     left: 0;
+     background-color: #ffca28;
+     /* Kolor linii podkreślenia */
+     visibility: hidden;
+     /* Ukryj początkowo */
+     transition: all 0.3s ease-in-out;
+ }
+
+ /* Animacja podkreślenia przy najechaniu */
+ nav a:hover:before {
+     visibility: visible;
+     width: 100%;
+     left: 0;
+ }
+
+ /* Zmiana koloru tekstu przy najechaniu */
+ nav a:hover {
+     color: #161616;
+ }
+
+ /* Styl dla aktywnego linku */
+ nav a.active {
+     color: #161616;
+ }
+
+ nav a.active:before {
+     content: "";
+     position: absolute;
+     width: 100%;
+     /* Pełna szerokość dla aktywnego linku */
+     height: 2px;
+     bottom: 0;
+     left: 0;
+     background-color: #ffca28;
+     visibility: visible;
+ }
+ /* Styl dla przycisku hamburgera */
+ .hamburger {
+     display: none;
+     /* Ukryty domyślnie */
+     position: fixed;
+     right: 20px;
+     top: 20px;
+     background: none;
+     border: none;
+     font-size: 30px;
+     color: #161616;
+     z-index: 100;
+ }
+
+.nav-list.active {
+    right: -20px;
+    margin: 0;
+}
+.policy-item .policy{
+    display: none;
+}
+
+
+ /* Media queries dla mniejszych ekranów */
+ @media (max-width: 768px) {
+        nav {
+            width: 100vw;
+            position: fixed;
+            top: 0;
+            margin: 0;
+            background-color: rgba(238, 238, 238, 0.5);
+            backdrop-filter: blur(10px);
+            text-align: center;
+    
+        }
+        .logo {
+            display: block;
+            height: 25px;
+            float: left;
+            margin: 20px 20px;
+        }
+
+         .hamburger {
+             display: block;
+             position: fixed;
+             right: 20px;
+             top: 10px;
+             background: none;
+             border: none;
+             font-size: 30px;
+             color: #161616;
+             z-index: 3;
+         }
+         li {
+            display: list-item;
+            margin: 25px 0;
+         }
+
+        .nav-list{
+            width: 40vw;
+            height: 100vh;
+            margin: 0;
+            padding-top: 50px;
+            padding-right: 50px;
+            text-align: center;
+            background-color: #EEEEEE; 
+            position: fixed;
+            right: -100vw;
+            box-shadow: -2px -2px 0 rgba(184, 184, 184, 0.5);
+            transition: right 0.5s;
+            z-index: 2;
+         }
+        .policy-item{
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            height: 100%;
+            background-color: #2592F0;
+         }
+        .policy-item .policy {
+                     display: block;
+                     text-decoration: none;
+                     color: #161616;
+                     font-size: 1em;
+                     bottom: 0;
+                     
+        }
+
+ }

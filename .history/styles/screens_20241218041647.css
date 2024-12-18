@@ -1,0 +1,104 @@
+.screens-container{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.screens-shots{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.screens-text{
+    top: 0;
+    text-align: left;
+    width: 80vw;
+
+    /* font-size: 1.5em;
+    line-height: 2em; */
+}
+ .screen-card {
+     display: block;
+     position: relative;
+     /* Pozwala na pozycjonowanie absolutne tła względem tego kontenera */
+     margin: 20px 70px;
+     width: auto;
+     /* Ustaw szerokość karty, np. na podstawie szerokości obrazu */
+     height: auto;
+     /* Ustaw wysokość karty, np. na podstawie wysokości obrazu */
+ }
+
+ .screen-card .mockup-bg {
+     position: absolute;
+     /* Pozycjonowanie względem najbliższego przodka z position: relative */
+     top: 0;
+     /* Wyrownaj do górnej krawędzi kontenera */
+     left: 0;
+     /* Wyrownaj do lewej krawędzi kontenera */
+     width: 95%;
+     /* Rozciągnij tło do pełnej szerokości kontenera */
+     height: 95%;
+     z-index: 1;
+ }
+
+ .screen-card .app-page {
+     position: relative;
+     /* Zapewnia, że obrazek aplikacji jest nad tłem */
+     max-height: 450px;
+     width: 100%;
+     /* Aby obrazek dopasował się do szerokości kontenera */
+     z-index: 1;
+     /* Zapewnia, że obrazek aplikacji jest na wierzchu */
+ }
+
+ .screen-card .app-page:hover {
+     cursor: pointer;
+     transform: rotate(10deg);
+     transition: all 0.3s ease-in-out;
+ }
+
+@media (max-width: 768px) {
+    .screens-container{
+        width: 80vw;
+    }
+
+    .screens-container h1{
+       
+        font-size: 1.2em;
+                text-align: left;
+            
+    }
+    .screens-shots {
+            width: 80vw;
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            align-items: start;
+            min-height: min-content;
+            overflow-x: auto;
+        }
+                .screen-card:first-child {
+                    margin-left: 0;
+                    /* Usuwa lewy margines dla pierwszej karty, przesuwa ją bliżej krawędzi */
+                }
+        
+                 .screen-card {
+                     flex: 0 0 auto;
+                     margin-right: 10px;
+                 }
+        
+                 .screen-card .app-page {
+                     max-height: 300px;
+                     width: auto;
+                     display: block;
+                 }
+        
+                 .screen-card:last-child {
+                     margin-right: 0;
+                 }
+
+                                 .screen-card img:hover {
+                                     cursor: pointer;
+                                     transform: rotate(0);
+                                 }
+}

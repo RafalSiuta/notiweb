@@ -1,0 +1,195 @@
+/* 
+
+.themes-container{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+.theme-text{
+    display: block;
+    width:30%;
+    color: black;
+    text-align: left;
+}
+
+.theme-text h1 {
+    font-size: 2.5em;
+}
+
+.theme-text p {
+    font-size: 1.5em;
+    line-height: 2em;
+}
+
+.theme-card-container{
+    top: 0;
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aquamarine;
+}
+.theme-card{
+    display: block;
+    position: relative;
+    margin: auto;
+}
+.theme-screen-img {
+    height: 550px;
+    position: absolute;
+    /* opacity: 0.5; 
+    margin: auto;
+}
+
+.theme-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 550px;
+    background-color: bisque;
+    
+}
+
+.theme-buttons img{
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    margin: 20px 10px;
+
+}
+
+.theme-buttons img:hover{
+    transform: scale(1.05);
+        box-shadow: 2px 1px 1px rgba(177, 177, 177, 0.5);
+        transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+} */
+
+.themes-container {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+.theme-text {
+    display: block;
+    width: 30%;
+    color: black;
+    text-align: left;
+}
+
+.theme-text h1 {
+    font-size: 2.5em;
+}
+
+.theme-text p {
+    font-size: 1.5em;
+    line-height: 2em;
+}
+
+.theme-card-container {
+    top: 0;
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.theme-card {
+    display: flex;
+    position: relative;
+    width: 100%;
+    /* Pełna szerokość kontenera */
+    justify-content: center;
+    /* Wyśrodkowanie obrazków w poziomie */
+}
+
+.theme-screen-img {
+    display: none;
+    height: 550px;
+    position: absolute;
+    top: 0;
+    /* Ustawienie obrazków na górze */
+    left: 50%;
+    transform: translateX(-50%);
+    /* Centrowanie obrazków */
+}
+
+.theme-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.theme-buttons img {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    margin: 20px 10px;
+}
+
+.theme-buttons img:hover {
+    transform: scale(1.05);
+    box-shadow: 2px 1px 1px rgba(177, 177, 177, 0.5);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.theme-screen-img.active {
+    display: block;
+}
+@media (max-width: 768px) {
+    .themes-container {
+        flex-direction: column;
+        align-items: center;
+        /* Centruje zawartość po zmianie kierunku na kolumnę */
+        padding: 10px;
+        /* Dodaj trochę paddingu dla lepszego wyglądu */
+    }
+.theme-text{
+    text-align: left;
+    width: 80vw;
+}
+    .theme-text h1 {
+        font-size: 1em;
+    }
+
+    .theme-text p {
+        font-size: 0.7em;
+    }
+
+    .theme-card-container {
+        width: 80vw;
+    }
+
+    .theme-card {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .theme-screen-img {
+        max-height: 300px;
+        /* Dostosuj wysokość obrazków, aby pasowały lepiej na mniejsze ekrany */
+        width: auto;
+        /* Utrzymuje proporcje obrazu */
+    }
+    .theme-buttons{
+
+        /* margin-bottom: 100px; */
+    }
+    .theme-buttons img {
+        margin: 10px;
+        width: 40px;
+        height: 40px;
+        /* Zmniejsz odstępy między przyciskami */
+    }
+}

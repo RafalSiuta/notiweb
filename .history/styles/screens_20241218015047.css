@@ -1,0 +1,14 @@
+.screens-shots{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.screen-card{
+    display: block;
+    margin: 20px 70px;
+}
+
+.screen-card img{
+    height: 400px;
+    transform: rotate(10deg);
+}

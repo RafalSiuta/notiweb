@@ -1,0 +1,50 @@
+
+
+.themes-container{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+.theme-text{
+    display: block;
+    width:30%;
+    color: black;
+    text-align: left;
+}
+
+.theme-card-container{
+    top: 0;
+    width: 50%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aquamarine;
+}
+.theme-card{
+    display: block;
+    position: relative;
+    margin: auto;
+}
+.theme-screen-img {
+    height: 550px;
+    position: absolute;
+    opacity: 0.5;
+}
+
+.theme-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 550px;
+}
+
+.theme-buttons img{
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    margin: 20px 10px;
+
+}
+

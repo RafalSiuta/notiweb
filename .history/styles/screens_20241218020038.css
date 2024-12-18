@@ -1,0 +1,19 @@
+.screens-shots{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.screen-card{
+    display: block;
+    margin: 20px 70px;
+}
+
+.screen-card img{
+    max-height: 550px;
+}
+
+.screen-card img:hover {
+    transform: scale(1.05);
+    transform: rotate(10deg);
+    transition: all 0.3s ease-in-out;
+}

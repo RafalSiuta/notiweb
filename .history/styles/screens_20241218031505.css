@@ -1,0 +1,72 @@
+.screens-container{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.screens-shots{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.screen-card{
+    display: block;
+    margin: 20px 70px;
+}
+
+.screen-card img{
+    max-height: 550px;
+}
+
+.screen-card img:hover {
+    cursor: pointer;
+    transform: rotate(5deg);
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .screens-container{
+        width: 80vw;
+    }
+
+    .screens-container h1{
+       
+        font-size: 1.2em;
+                text-align: left;
+            
+    }
+    .screens-shots {
+            width: 80vw;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            align-items: start;
+            min-height: min-content;
+            overflow-x: auto;
+        }
+        
+    /* .screen-card img {
+            max-height: 300px;
+            margin: 0 20px;
+
+        } */
+                 .screen-card {
+                     flex: 0 0 auto;
+                     /* Zapobiega rozciąganiu kart */
+                     margin-right: 20px;
+                     /* Odstępy między kartami */
+                 }
+        
+                 .screen-card img {
+                     max-height: 300px;
+                     width: auto;
+                     /* Utrzymuje proporcje obrazu */
+                     display: block;
+                     /* Usuwa domyślną przestrzeń pod obrazkami inline */
+                 }
+        
+                 .screen-card:last-child {
+                     margin-right: 0;
+                     /* Usuwa margines dla ostatniej karty */
+                 }
+}

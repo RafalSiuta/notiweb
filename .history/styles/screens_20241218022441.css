@@ -1,0 +1,38 @@
+.screens-container{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.screens-shots{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.screen-card{
+    display: block;
+    margin: 20px 70px;
+}
+
+.screen-card img{
+    max-height: 550px;
+}
+
+.screen-card img:hover {
+    cursor: pointer;
+    transform: rotate(5deg);
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .screens-shots {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+    .screen-card img {
+            max-height: 300px;
+            z-index: 2;
+        }
+}
