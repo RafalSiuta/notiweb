@@ -69,6 +69,9 @@
                 text-align: left;
             
     }
+        /* .screen-card .mockup-bg {
+            z-index: -1;
+        } */
     .screens-shots {
             width: 80vw;
             display: flex;

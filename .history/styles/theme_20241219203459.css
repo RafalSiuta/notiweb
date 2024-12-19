@@ -147,6 +147,7 @@
 
 .theme-screen-img.active {
     display: block;
+    z-index: -1;
 }
 @media (max-width: 768px) {
     .themes-container {

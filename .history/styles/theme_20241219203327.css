@@ -118,7 +118,7 @@
     /* Ustawienie obrazków na górze */
     left: 50%;
     transform: translateX(-50%);
-    
+    z-index: 1;
     /* Centrowanie obrazków */
 }
 
@@ -129,6 +129,7 @@
     width: 100%;
     justify-content: center;
     margin-bottom: 100px;
+    z-index: -1;
 }
 
 .theme-buttons img {
